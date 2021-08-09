@@ -1,0 +1,143 @@
+body{
+	margin:0;
+	font-family: 'poppins', sans-serif;
+
+
+}
+
+* {
+	box-sizing: border-box;
+	margin:0;
+}
+
+.container{
+	max-width: 1124px;
+	margin: auto; 
+
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+header{
+
+	position: absolute;
+	left:0px;
+	right:0px;
+	border-bottom: 1px solid #423940;
+	padding: 2px 20px;
+	z-index: 10;
+}
+
+header .row{
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .brand-name a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: black;
+	text-transform: uppercase;
+	position: relative;
+	
+}
+
+header.brand-name a::before{     
+	content: '';
+	height: 4px;
+	background-color: lightblue;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+
+}
+
+header .navbar ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+header .navbar ul li a{
+
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 72px;
+	color: black;
+	display: block;
+	font-weight: 600;
+	position: relative;
+}
+
+header .navbar ul li a::before{
+	content: '';
+	height: 4px;
+	background-color: lightblue;
+	width: 0%;
+	position: absolute;
+	right: 0px;
+	bottom: -1px;
+	transition: all .5s ease;
+}
+header .navbar ul li a:hover::before{
+	width:100%;
+	left:0;
+	background-color: blue;
+}
+header .navbar ul li a.active::before{
+	width:100%;
+	left:0;
+	background-color: darkblue;
+}
+
+.leftside
+{
+	margin-top:90px;
+	margin-left:15%;
+	height:auto;
+	width:65%;
+	background-color:rgba(0,0,0,0.5);
+	border-radius:3%;
+	text-align:justify;
+	font-size:18px;
+	padding:10px;
+	color:white;
+}
+.find
+{
+	margin-top:5px;
+	margin-left:5%;
+	height:auto;
+	width:90%;
+	background-color:black;
+	text-align:justify;
+	font-size:18px;
+	padding:10px;
+	color:white;
+}
+
+.blogs .blogs-content .box .img{
+	overflow: hidden;
+
+}
+.blogs .blogs-content .box .img img{
+ width:10%;
+ display:block;
+ transition: all .5s ease;
+}
+
+ .blogs .blogs-content .box:hover .img img{
+	transform:scale(1.2);
+} 

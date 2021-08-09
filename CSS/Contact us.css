@@ -1,0 +1,232 @@
+/*Contact us Section*/
+
+.contact-us{
+	padding:100px 100px;
+	text-align: center;
+	
+}
+
+.contact-us .section-title{
+	flex:0 0 80%;
+	max-width: 100%;
+	margin-bottom:20px;
+	text-align:center;
+	
+}
+
+.contact-us .contact-form{
+
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 50px;
+	border: 1px solid #d5d5d5d5;
+	text-align: center;
+	
+}
+
+.contact-us .contact-form .text{
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding-bottom: 28px;
+	text-align: center;
+}
+.contact-us .contact-form .text h2{
+	font-size: 30px;
+	font-weight: 600;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+.contact-us .contact-form .text p{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #838383;
+	margin: 0px;
+	text-align: center;
+}
+
+
+
+.contact-us .contact-form .row{
+	background-color:#d5d5d5;
+	display: flex;
+	flex:0 0 calc(50% - 15px);
+	max-width: calc(50% - 15px)
+   	align: center;
+
+}
+.contact-us .contact-form .space-between
+{
+	justify-content: space-between;
+}
+
+.contact-us .contact-form .col-6{
+	display: flex;
+	flex: 0 0 calc(50% - 15px);
+	max-width: calc(50% - 15px);
+}
+
+.contact-us .contact-form .col-12{
+	display: flex;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.contact-us .contact-form .form-control{
+
+	height: 45px;
+	width: 100%;
+	margin-bottom: 50px;
+	border:15px solid #cecece;
+	padding:12px 12px;
+	font-size:14px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	
+}
+.contact-us .contact-form textarea.form-control{
+	height:200px;
+}
+.contact-us .contact-form .form-control .placeholder{
+	color:#838383;
+}
+.contact-us .contact-form .button {
+	flex:0 0 100%;
+	max-width:100%;
+}
+.contact-us .contact-form .button a{
+	border-radius: 4px;
+	color:#ffffff;
+	padding:12px 25px;
+	text-decoration:none;
+	font-size:14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all .5s ease;
+	background-color: green;
+	box-shadow: 0px 10px 15px yellow;
+}
+.contact-us .contact-form .button a:hover{
+	background-color:white;
+	color:black;
+}
+
+/*contact us ending*/
+
+a:-webkit-any-link {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+body{
+	margin:0;
+	font-family: 'poppins', sans-serif;
+
+
+}
+
+* {
+	box-sizing: border-box;
+	margin:0;
+}
+
+.container{
+	max-width: 1124px;
+	margin: auto; 
+
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+header{
+
+	position: absolute;
+	left:0px;
+	right:0px;
+	border-bottom: 1px solid #423940;
+	padding: 2px 20px;
+	z-index: 10;
+}
+
+header .row{
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .brand-name a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: black;
+	text-transform: uppercase;
+	position: relative;
+	
+}
+
+header.brand-name a::before{     
+	content: '';
+	height: 4px;
+	background-color: lightblue;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+
+}
+
+header .navbar ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+header .navbar ul li a{
+
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 72px;
+	color: black;
+	display: block;
+	font-weight: 600;
+	position: relative;
+}
+
+header .navbar ul li a::before{
+	content: '';
+	height: 4px;
+	background-color: lightblue;
+	width: 0%;
+	position: absolute;
+	right: 0px;
+	bottom: -1px;
+	transition: all .5s ease;
+}
+header .navbar ul li a:hover::before{
+	width:100%;
+	left:0;
+	background-color: blue;
+}
+header .navbar ul li a.active::before{
+	width:100%;
+	left:0;
+	background-color: darkblue;
+}
+
+
+
